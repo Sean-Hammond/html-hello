@@ -17,16 +17,16 @@
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark"><!-- removed class "bg-body-tertiary" -->
   <div class="container-fluid">
-    <a class="navbar-brand" href="#"><i class="fa-solid fa-panorama"></i> Cliftomedia</a>
+    <a class="navbar-brand" href="#">
+    <!-- <i class="fa-solid fa-panorama"></i> -->
+    <img src="assets/cliftopedia-light.png" alt="letter c with an image icon inside">Cliftomedia</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <button type="button" class="btn btn-success btn-sm">
-            <a class="nav-link active" data-bs-toggle="modal" data-bs-target="#exampleModal" aria-current="page" href="#">Create a new post</a>
-          </button>
+            <a class="nav-link active btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal" aria-current="page" href="#">Create a new post</a>
         </li>
         <li class="nav-item dropdown">
           <!-- <button class="btn btn-outline-dark btn-sm" type="submit"> -->
@@ -73,7 +73,7 @@
     </div>
   </div>
 </div>
-        <header class="toggle">
+        <main class="toggle">
             <p>Note: This is a fictional social media company created by me.</p>
             <ul class="nav nav-pills mb-3v" id="pills-tab" role="tablist">
             <li class="col-5"> </li>
@@ -86,29 +86,48 @@
             </ul>
             <div class="tab-content" id="pills-tabContent">
             <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">1</div>
-            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
-                <div class="container post">
-            <div class="post">
-                <div class="post-header">
-                    <div>
-                       <h2>My Crazy photo, "Picture Perfect"!</h2> 
+              <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0"><br>
+                <div class="d-flex flex-column align-items-center gap-3">
+                  <div class="post">
+                    <div class="card" style="width: 18rem;">
+                      <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center">
+                          <h5 class="card-title">Cool scenery</h5>
+                          <span class="text-muted">1/1</span>
+                        </div>
+                        <img src="https://picsum.photos/400/200?random=1" class="card-img-top" alt="...">
+                        <p class="card-text"><a href="#" class="btn btn-primary btn-xs"><i class="fa-regular fa-thumbs-up"></i></a><strong>  204 Likes</strong><br>some random photo I took whilst walking lol</p>
+                      </div>
                     </div>
-                    <div>
-                        <span>12/14</span>
+                  </div><br>
+                  <div class="post">
+                    <div class="card" style="width: 18rem;">
+                      <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center">
+                          <h5 class="card-title">PERFECT shot!!</h5>
+                          <span class="text-muted">4/7</span>
+                        </div>
+                        <img src="https://picsum.photos/400/200?random=2" class="card-img-top" alt="...">
+                        <p class="card-text"><a href="#" class="btn btn-primary btn-xs"><i class="fa-regular fa-thumbs-up"></i></a><strong>  1,007 Likes</strong><br>Dude! how did I take this good a photo?</p>
+                      </div>
                     </div>
-                </div>
-                <div>
-                    <img src="https://picsum.photos/400/200?random=1" alt="Random Photo 1">
-                </div>
-                <div>
-                    <h3>204 Likes</h3>
-                    <p>This is a great photo to post on Instagram.</p>
-                </div>
+                  </div><br>
+                  <div class="post">
+                    <div class="card" style="width: 18rem;">
+                      <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center">
+                          <h5 class="card-title">mystery item hidden somewhere</h5>
+                          <span class="text-muted">6/20</span>
+                        </div>
+                        <img src="https://picsum.photos/400/200?random=3" class="card-img-top longPhoto" alt="...">
+                        <p class="card-text"><a href="#" class="btn btn-primary btn-xs"><i class="fa-regular fa-thumbs-up"></i></a><strong>  0 Likes</strong><br>BET you can't detect the hidden object in this pic. LIKE it if you did haha</p>
+                      </div>
+                    </div><br>
+                  </div>
+                </div>  
+              </div>
             </div>
-        </div>
-            </div>
-            </div>
-        </header>
+          </main>
     </div>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js" integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK" crossorigin="anonymous"></script>

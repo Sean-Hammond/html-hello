@@ -6,6 +6,10 @@ body {
   background-color: lightgray;
 }
 
+nav img {
+  max-width: 40px;
+}
+
 .navbar {
     background-color: black;
 }
@@ -14,10 +18,21 @@ body {
     color: white;
 }
 
-.navbar button {
+.navbar .btn {
   background-color: lightblue;
 }
 
 textarea {
   color: gray;
+}
+
+.btn-xs {
+  padding: 0.15rem 0.4rem;
+  font-size: 0.75rem;
+  border-radius: 0.2rem;
+}
+
+.longPhoto {
+  height: 350px;
+  object-fit: cover;
 }
